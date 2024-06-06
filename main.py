@@ -9,7 +9,8 @@ sleep_num = [10,11,12,13,15]
 walk_left = [6,7]
 walk_right = [8,9]
 event_number = random.randrange(1,3,1)
-impath = 'C:\\Users\\LENOVO\\Desktop\\pablo\\assets'
+impath = 'put da path here'
+
 def event(cycle,check,event_number,x):
  if event_number in idle_num:
   check = 0
@@ -35,6 +36,7 @@ def event(cycle,check,event_number,x):
      check = 3
      print('from sleep to idle')
      window.after(100,update,cycle,check,event_number,x)
+     
 #making gif work 
 def gif_work(cycle,frames,event_number,first_num,last_num):
  if cycle < len(frames) -1:
